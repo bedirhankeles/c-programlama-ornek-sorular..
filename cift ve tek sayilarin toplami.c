@@ -2,25 +2,25 @@
 #include <stdlib.h>
 
 int main() {
-    // n kadar girilen sayıdan çift olanları ayrı tek olanları ayrı toplan c kodu
-	//n=klavyeden gireceğimiz herhangi bir sayı
+    // n kadar girilen sayÄ±dan Ã§ift olanlarÄ± ayrÄ± tek olanlarÄ± ayrÄ± toplan c kodu
+	//n=klavyeden gireceÄŸimiz herhangi bir sayÄ±
+	//n deÄŸerini siz istediÄŸiniz sayi yapabilirsiniz  mesela 1 den 100 e kadar olan cift sayilarin toplamÄ± gibi
 	
-	
-	int n,cift_toplam=0,tek_toplam=0,i,sayi; // tek ve cift sayilar için ayrı toplam değişkenleri atadım, i döngü için
+	int n,cift_toplam=0,tek_toplam=0,i,sayi; // tek ve cift sayilar iÃ§in ayrÄ± toplam deÄŸiÅŸkenleri atadÄ±m, i dÃ¶ngÃ¼ iÃ§in
 	
 	printf("Sayi adedi giriniz: ");
 	scanf("%d",&n);
 	
-    for(i=0;i<n;i++) // döngü sıfırdan başlayacak n'e kadar gelecek ve tek tek artacak
+    for(i=0;i<n;i++) // dÃ¶ngÃ¼ sÄ±fÄ±rdan baÅŸlayacak n'e kadar gelecek ve tek tek artacak
     {
-    	printf("%d.sayiyi giriniz: ",i+1); // döngünün içinde n adet sayımı istiyorum -- i+1 yazmamın sebebi 1. sayi 2.sayi diye çıktı vermesi için
+    	printf("%d.sayiyi giriniz: ",i+1); // dÃ¶ngÃ¼nÃ¼n iÃ§inde n adet sayÄ±mÄ± istiyorum -- i+1 yazmamÄ±n sebebi 1. sayi 2.sayi diye Ã§Ä±ktÄ± vermesi iÃ§in
     	scanf("%d",&sayi);
     	
-    	if(sayi%2==0) // gireceğim sayi 2 ye tam bölünüyorsa demek parantezin içi bunu neden yaptı şimdi diye sorarsanız sayi ikiye bölünüyorsa çifttir kalan 0 olur
+    	if(sayi%2==0) // gireceÄŸim sayi 2 ye tam bÃ¶lÃ¼nÃ¼yorsa demek parantezin iÃ§i bunu neden yaptÄ± ÅŸimdi diye sorarsanÄ±z sayi ikiye bÃ¶lÃ¼nÃ¼yorsa Ã§ifttir kalan 0 olur
     	{
     		cift_toplam=cift_toplam+sayi;
 		}
-		else if(sayi%2==1) // girilen sayi 2 ye bölünmüyorsa tektir ve kalan hep bir olur -- else if devam ettirir else derseniz parantez içine bir şey yazamazsınız
+		else if(sayi%2==1) // girilen sayi 2 ye bÃ¶lÃ¼nmÃ¼yorsa tektir ve kalan hep bir olur -- else if devam ettirir else derseniz parantez iÃ§ine bir ÅŸey yazamazsÄ±nÄ±z
 		{
 			tek_toplam=tek_toplam+sayi;
 		}
@@ -29,8 +29,8 @@ int main() {
 	printf("Tek sayilarin toplami: %d",tek_toplam); // teklerin toplami
  
 
-    // umarım faydası olmuştur
-    // iyi çalışmalar..
+    // umarÄ±m faydasÄ± olmuÅŸtur
+    // iyi Ã§alÄ±ÅŸmalar..
 
 	return 0;
 }
